@@ -1,0 +1,23 @@
+html
+  box-sizing border-box
+
+.layout
+  margin 0 auto
+  width 80%
+
+@media only screen and (max-width 767px)
+  .layout
+    width 100%
+
+@media screen and (min-width 767px) and (max-width 959px)
+  .layout
+    width 100%
+
+@media screen and (min-width 959px) and (max-width 1440px)
+  .layout
+    width 950px
+    min-width 70%
+
+@media only screen and (min-width 1440px)
+  .layout
+    max-width 1048px

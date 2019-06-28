@@ -1,0 +1,150 @@
+.page
+  max-width 100%
+  padding-left 310px
+  padding-bottom 120px
+  display flex
+  flex-direction column
+  flex 1
+  min-height calc(100vh - 70px)
+  position relative
+
+@media only screen and (max-width 767px)
+  .page
+    padding 10px 30px 40px
+
+.header-anchor
+  font-size .8em
+  vertical-align baseline
+  color #cacaca
+  transition color .1s ease
+  border none
+  margin-left -15px
+
+  &:hover
+    color #444
+    text-decoration none
+
+.content:not(.custom)>h1,
+.content:not(.custom)>h2,
+.content:not(.custom)>h3,
+.content:not(.custom)>h4,
+.content:not(.custom)>h5,
+.content:not(.custom)>h6
+  margin-top -3.1rem
+  padding-top 4.6rem
+  margin-bottom: 0
+
+.content
+  h1
+    font-size 2rem
+    font-weight 600
+
+  h2, h3
+    font-weight 500
+
+  h1, h2, h3, h4, h5, h6
+    margin-top 1.5rem
+    margin-bottom 1.4rem
+
+  svg.icon.outbound
+    fill white
+    color white
+    width 14px
+    height 14px
+    background-image url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxM3B4IiBoZWlnaHQ9IjEzcHgiIHZpZXdCb3g9IjAgMCAxMyAxMyIgYXJpYS1sYWJlbD0iZXh0ZXJuYWwgbGluayI+PGcgc3Ryb2tlPSIjMDY3ZGY3IiBzdHJva2Utd2lkdGg9IjAuOCIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNNi4yIDYuN2w1LTUuM003LjkuOWg0bTAgMHY0bS0yIDIuNXYyLjVhMiAyIDAgMCAxLTIgMmgtNWEyIDIgMCAwIDEtMi0ydi01YzAtMS4xLjktMiAyLTJoMi41Ii8+PC9nPjwvc3ZnPg==')
+    background-repeat no-repeat
+    background-size cover
+    background-position 100%
+    margin-left 5px
+    margin-right 2px
+    vertical-align middle
+
+    path
+      display none
+      opacity 0
+    polygon
+      display none
+      opacity 0
+
+.page-nav
+  border-top 1px solid rgb(234, 234, 234)
+  margin-top 8rem
+  padding 10px 5px
+  position relative
+
+  .inner
+    margin 0 0 10px 0
+
+    a
+      margin-left 3px
+      text-transform uppercase
+      vertical-align baseline
+
+  .prev
+    display block
+    font-size .8em
+    &:before
+      content: 'LAST:'
+
+  .next
+    font-size 1.1em
+    &:before
+      content: 'NEXT:'
+
+
+.last-updated
+  position absolute
+  right 0
+  font-size 12px
+  color #666
+
+  .prefix
+    cursor default
+    user-select none
+
+.edit-link
+  position absolute
+  top -6px
+  transform translateY(-100%)
+  right 0
+  font-size 12px
+
+.custom-block
+  padding 2px 24px
+  min-height 30px
+  margin 30px 0
+  font-size 14px
+  line-height 1.8
+  border 1px solid #ddd
+  background-color white
+  border-radius 4px
+
+  .custom-block-title
+    text-transform uppercase
+    font-weight 500
+    display inline-block
+    float left
+    margin-right 10px
+
+    &:after
+      content: ':'
+
+.content
+  .tip
+    border-color #007aff
+    .custom-block-title
+      color #007aff
+
+  .warning
+    border-color #f5a623
+    .custom-block-title
+        color #f5a623
+
+  .danger
+    border-color #eb5757
+    .custom-block-title
+      color #eb5757
+
+.zi-dark-theme
+  .custom-block
+    background black
