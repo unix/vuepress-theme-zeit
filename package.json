@@ -13,7 +13,7 @@
   ],
   "author": {
     "email": "lambdas.dev@gmail.com",
-    "name": "wittbulter"
+    "name": "unix"
   },
   "files": [
     "components",
@@ -24,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wittbulter/vuepress-theme-zeit.git"
+    "url": "git+https://github.com/unix/vuepress-theme-zeit.git"
   },
   "xo": {
     "extends": [
